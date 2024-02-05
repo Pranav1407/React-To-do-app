@@ -8,7 +8,7 @@ import SearchTask from "./SearchTask";
 
 function App() {
 
-  const [items,setItems] = useState(JSON.parse(localStorage.getItem("To-do List")))
+  const [items,setItems] = useState(JSON.parse(localStorage.getItem("To-do List")) || [])
 
     const [NewItem, setNewItem] = useState('')
     const [searchItem,setsearchItem] = useState('')
